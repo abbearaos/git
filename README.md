@@ -1,70 +1,38 @@
-# Git på 5 minuter 🚀
+# Git och GitHub – enkelt förklarat
 
-> För dig som är ny i kursen. Allt körs i **Terminal** (Mac) eller **Git Bash** (Windows).
+## Vad är Git? 📸
+Ett program på din dator som **sparar versioner** av dina filer.
+Du kan alltid gå tillbaka till en gammal version.
 
-## Så flyttar en fil genom Git
+## Vad är GitHub? ☁️
+En webbsida där du **laddar upp** dina filer.
+Då kan andra se dem, och de försvinner inte.
 
-```mermaid
-flowchart LR
-    A[📝 Ändrad fil<br/>untracked / röd] -- git add --> B[📦 Staged<br/>grön]
-    B -- git commit --> C[💾 Committed<br/>sparad lokalt]
-    C -- git push --> D[☁️ GitHub]
-```
-
-## 1. Starta ett repo
-
-```bash
-mkdir mitt-projekt
-cd mitt-projekt
-git init
-```
-
-## 2. Spara en version
-
-```bash
-touch index.html
-git status                          # röd = untracked
-git add index.html
-git status                          # grön = staged
-git commit --message "Skapat index.html"
-```
-
-## 3. Se historiken
-
-```bash
-git log --pretty=oneline
-```
-```
-d400f9f (HEAD -> master) Lagt till h2
-5313b0d Skapat index.html
-```
-
-## 4. Backa till en gammal version ⏪
-
-```bash
-git checkout 5313b0d index.html     # 4–7 tecken av hashen räcker
-```
-
-## 5. Testa utan risk – branch 🌿
-
-```bash
-git branch develop
-git checkout develop                # jobba här...
-git checkout master
-git merge develop                   # ...ta in ändringarna
-```
-
-## 6. Ladda upp till GitHub ☁️
-
-```bash
-git remote add origin https://github.com/ANVÄNDARNAMN/REPO.git
-git push -u origin master
-```
-
-## ⚠️ Vanliga misstag
-
-| Problem | Lösning |
+## Skillnaden
+| Git | GitHub |
 |---|---|
-| `dquote>` i terminalen | Du glömde ett `"`. Tryck **Ctrl + C** och skriv om. |
-| `Repository not found` | Fel användarnamn i adressen. Kolla med `git remote -v`. |
-| GitHub vill ha lösenord | Använd `gh auth login` istället. |
+| Program | Webbsida |
+| På din dator | På internet |
+| Sparar | Delar |
+
+> **Git är kameran. GitHub är fotoalbumet.**
+
+## Det här har jag lärt mig i veckan 🎓
+- **Terminalen:** skapa mappar och filer (`mkdir`, `touch`, `ls`)
+- **Git:** spara versioner och gå tillbaka
+- **GitHub:** ladda upp mitt arbete
+- **VS Code:** skriva kod snabbt med Emmet
+- **HTML:** bygga en webbsida
+- **CSS:** ge sidan färg och form
+
+## 5 kommandon du behöver
+
+```bash
+git init              # starta Git i mappen
+git add index.html    # välj fil att spara
+git commit -m "Text"  # spara en version
+git push              # ladda upp till GitHub
+git status            # se vad som händer
+```
+
+**Kom ihåg:** add → commit → push
