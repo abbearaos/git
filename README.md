@@ -1,10 +1,10 @@
 # Git och GitHub – enkelt förklarat
 
-## Vad är Git? 📸
+## Vad är Git?
 Ett program på din dator som **sparar versioner** av dina filer.
 Du kan alltid gå tillbaka till en gammal version.
 
-## Vad är GitHub? ☁️
+## Vad är GitHub?
 En webbsida där du **laddar upp** dina filer.
 Då kan andra se dem, och de försvinner inte.
 
@@ -17,7 +17,7 @@ Då kan andra se dem, och de försvinner inte.
 
 > **Git är kameran. GitHub är fotoalbumet.**
 
-## Det här har jag lärt mig i veckan 🎓
+## Det här har jag lärt mig i veckan
 - **Terminalen:** skapa mappar och filer (`mkdir`, `touch`, `ls`)
 - **Git:** spara versioner och gå tillbaka
 - **GitHub:** ladda upp mitt arbete
